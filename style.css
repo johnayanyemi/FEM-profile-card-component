@@ -75,14 +75,4 @@ div.bottom-box p {
 
 body > img {
     display: none;
-    position: absolute;
-    z-index: -1;
-}
-body > img.top {
-    top: 0;
-    left: 0;
-}
-body > img.bottom {
-    bottom: 0;
-    right: 0;
 }
