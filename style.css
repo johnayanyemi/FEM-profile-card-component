@@ -62,7 +62,7 @@ span{font-weight: 400;}
 div.container p.location {margin: 10px 0 25px 0;}
 
 div.bottom-box {
-    padding: 20px 40px;
+    padding: 20px 45px;
     text-align: center;
     justify-content: space-between;
     border-top: 1px solid rgba(196, 194, 194, 0.336);
@@ -74,17 +74,14 @@ div.bottom-box p {
 }
 
 body > img {
-    max-height: 100%;
     position: absolute;
     z-index: -1;
 }
 body > img.top {
-    margin-top: -300px;
     top: 0;
     left: 0;
 }
 body > img.bottom {
-    margin-bottom: -300px;
     bottom: 0;
     right: 0;
 }
