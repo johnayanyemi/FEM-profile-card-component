@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    background: linear-gradient();
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h2 {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+}
+p, span {color: hsl(0, 0%, 59%);}
+
+.flex {display: flex;}
+
+div.container {
+    min-width: 330px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 10px 30px rgba(12, 12, 12, .2);
+}
+
+div.container .bg-top {
+    border-radius: 10px 10px 0 0;
+    height: 130px;
+    width: 100%;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.container .profile {
+    background-color: white;
+    padding: .3em;
+    border-radius: 50%;
+    max-width: 30%;
+    position: absolute;
+    top: 70px;
+}
+
+div.container h2.name {
+    margin-top: 60px;
+}
+span{font-weight: 400;}
+
+div.container p.location {margin: 10px 0 25px 0;}
+
+div.bottom-box {
+    padding: 20px 40px;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(196, 194, 194, 0.336);
+    width: 100%;
+}
+div.bottom-box p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+body > img {
+    max-height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+body > img.top {
+    margin-top: -300px;
+    top: 0;
+    left: 0;
+}
+body > img.bottom {
+    margin-bottom: -300px;
+    bottom: 0;
+    right: 0;
+}
