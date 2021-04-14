@@ -7,14 +7,14 @@
 }
 
 body {
+    background: url(./images/bg-pattern-top.svg) no-repeat top -35em left -20em, url(./images/bg-pattern-bottom.svg) no-repeat bottom -40em right -15em;
+
     font-family: 'Kumbh Sans', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     background-color: hsl(185, 75%, 39%);
-    background: linear-gradient();
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 h2 {
@@ -25,24 +25,16 @@ p, span {color: hsl(0, 0%, 59%);}
 
 .flex {display: flex;}
 
-div.container {
+.container {
+    background: url(./images/bg-pattern-card.svg) no-repeat top center ;
+
     min-width: 330px;
     background-color: white;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
     position: relative;
     box-shadow: 5px 10px 30px rgba(12, 12, 12, .2);
-}
-
-div.container .bg-top {
-    border-radius: 10px 10px 0 0;
-    height: 130px;
-    width: 100%;
-    background-color: hsl(185, 75%, 39%);
-    background-image: url(./images/bg-pattern-card.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 div.container .profile {
@@ -51,28 +43,24 @@ div.container .profile {
     border-radius: 50%;
     max-width: 30%;
     position: absolute;
-    top: 70px;
+    top: 90px;
 }
 
 div.container h2.name {
-    margin-top: 60px;
+    margin-top: 11em;
 }
 span{font-weight: 400;}
 
 div.container p.location {margin: 10px 0 25px 0;}
 
-div.bottom-box {
+.bottom-box {
     padding: 20px 45px;
     text-align: center;
     justify-content: space-between;
     border-top: 1px solid rgba(196, 194, 194, 0.336);
     width: 100%;
 }
-div.bottom-box p {
-    font-size: 14px;
+.bottom-box p {
+    font-size: 12px;
     margin-top: 5px;
-}
-
-body > img {
-    display: none;
 }
